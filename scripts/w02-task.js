@@ -11,7 +11,7 @@ let profilePicture = 'images/seniorPhoto.jpg';
 const nameElement =  document.getElementById('name');
 const foodElement = document.getElementById('food');
 const yearElement = document.querySelector('#year');
-const imageElement = document.getElementById('img');
+const imageElement = document.querySelector('img');
 
 /* Step 4 - Adding Content */
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
@@ -20,15 +20,15 @@ imageElement.setAttribute('src', profilePicture);
 imageElement.setAttribute('alt', `Profile image of ${fullName}`);
 
 /* Step 5 - Array */
-const favoriteFood = ['Pasta', 'Icecream', 'Soup', 'Pizza', 'Salad'];
-foodElement.innerHTML = favoriteFood;
-const otherFood = 'Ham';
-favoriteFood.push(otherFood);
-foodElement.innerHTML += `<br>${favoriteFood}`;
-favoriteFood.shift();
-foodElement.innerHTML += `<br>${favoriteFood}`;
-favoriteFood.pop();
-foodElement.innerHTML += `<br>${favoriteFood}`;
+const food = ["Pasta", " Salad", " Sushi", " Burger"];
+foodElement.textContent = food;
+const newFood = " Bacon";
+food.push(newFood);
+foodElement.innerHTML += `<br>${food}`;
+food.shift();
+foodElement.innerHTML += `<br>${food}`;
+food.pop();
+foodElement.innerHTML += `<br>${food}`;
 
 
 
