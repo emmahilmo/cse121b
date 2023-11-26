@@ -10,9 +10,18 @@ function addNumbers() {
     let addNumber2 = Number(document.querySelector('#add2').value);
     document.querySelector('#sum').value = add(addNumber1, addNumber2);
 }
-document.querySelector('#addNumber').addEventListener('click', addNumbers);
-/* Function Expression - Subtract Numbers */
+document.querySelector('#addNumbers').addEventListener('click', addNumbers);
 
+/* Function Expression - Subtract Numbers */
+function Subtract(number1, number2) {
+    return number1 - number2;
+}
+function subtractNumbers() {
+    let subtractNumber1 = Number(document.querySelector('#subtract1').value);
+    let subtractNumber2 = Number(document.querySelector('#subtract2').value);
+    document.querySelector('#sum').value = Subtract(subtractNumber1, subtractNumber2);
+}
+document.querySelector('#subtractNumbers').addEventListener('click', subtractNumbers);
 
 /* Arrow Function - Multiply Numbers */
 
