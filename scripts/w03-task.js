@@ -17,14 +17,20 @@ function Subtract(number1, number2) {
     return number1 - number2;
 }
 function subtractNumbers() {
-    let subtractNumber1 = Number(document.querySelector('#subtract1').value);
-    let subtractNumber2 = Number(document.querySelector('#subtract2').value);
-    document.querySelector('#sum').value = Subtract(subtractNumber1, subtractNumber2);
+    let subtract1 = Number(document.querySelector('#subtract1').value);
+    let subtract2 = Number(document.querySelector('#subtract2').value);
+    document.querySelector('#difference').value = Subtract(subtract1, subtract2);
 }
 document.querySelector('#subtractNumbers').addEventListener('click', subtractNumbers);
 
 /* Arrow Function - Multiply Numbers */
-
+const multiply = (number1, number2) => number1 * number2;
+const multiplyNumbers = () => {
+    Number(document.querySelector('#factor1').value);
+    Number(document.querySelector('#factor2').value);
+    document.querySelector('#product').value = multiply(factor1, factor2);
+}
+document.querySelector('#multiplyNumbers').addEventListener('click', multiplyNumbers);
 
 /* Open Function Use - Divide Numbers */
 
