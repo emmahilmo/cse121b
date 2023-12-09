@@ -312,4 +312,12 @@ footer {
         max-width: 950px;
     }
 
+    #project {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        margin: 0 auto;
+        max-width: 950px;
+    }
+
 }
