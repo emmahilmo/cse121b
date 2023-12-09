@@ -10,7 +10,7 @@ const displaycharacters = (characters) => {
 
         h3.textContent = character.characterName;
 
-        img.scr = character.imageUrl;
+        img.src = character.imageUrl;
         img.alt = character.campaign;
 
         article.appendChild(h3);
