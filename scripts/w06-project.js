@@ -45,9 +45,9 @@ const sortBy = () => {
             break;
         case 'other':
             displaycharacters(characterList.filter(character => character.campaign.includes('Campaign Other')));
-        case 'all':
-            displaycharacters(characterList);
-            break;
+        // case 'all':
+        //     displaycharacters(characterList);
+        //     break;
     }
 };
 getcharacters();
