@@ -44,10 +44,11 @@ const sortBy = () => {
             displaycharacters(characterList.filter(character => character.campaign.includes('Campaign 3')));
             break;
         case 'other':
-            displaycharacters(characterList.filter(character => character.campaign.includes('Campaign Other')));
-        // case 'all':
-        //     displaycharacters(characterList);
-        //     break;
+            displaycharacters(characterList.filter(character => character.campaign.includes('Other')))
+            break;
+        case 'all':
+            displaycharacters(characterList);
+            break;
     }
 };
 getcharacters();
