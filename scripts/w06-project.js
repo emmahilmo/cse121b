@@ -8,10 +8,10 @@ const displaycharacters = (characters) => {
         const h3 = document.createElement('h3');
         const img = document.createElement('img');
 
-        h3.textContent = character.characterNames;
+        h3.textContent = character.characterName;
 
         img.scr = character.imageUrl;
-        img.alt = character.characterName;
+        img.alt = character.campaign;
 
         article.appendChild(h3);
         article.appendChild(img);
@@ -25,11 +25,11 @@ const getcharacters = async () => {
     characterList = await response.json();
     displaycharacters(characterList);
 };
-/* reset Function */
+
 const reset = () => {
     characterElement.innerHTML = '';
 };
-/* sortBy Function */
+
 const sortBy = () => {
     const filter = document.getElementById('sortBy').value;
 
@@ -51,6 +51,5 @@ const sortBy = () => {
     }
 };
 getcharacters();
-/* Event Listener */
 const sortByElement = document.getElementById('sortBy');
 sortByElement.addEventListener('change', sortBy);
