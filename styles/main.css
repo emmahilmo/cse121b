@@ -333,7 +333,7 @@ footer {
     
     #characters img {
         width: 230px;
-        height: auto;
+        height: 200px;
         box-shadow: 0 0 30px #777;
         margin: .5rem;
     }
